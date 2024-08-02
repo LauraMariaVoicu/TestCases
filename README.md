@@ -22,6 +22,9 @@ User should be able to login and is taken to his profile page.
 **Test Data:**
 User: JohnSmith, Password: 123
 
+**Status:**
+Pass
+
 -------------------
 
 **Title:**
@@ -59,7 +62,10 @@ Test the login by using incorrect credentials.
 User should not be able to login if the credentials are incorrect.
 
 **Test Data:**
-User: J.Smith, Password: 012
+User: JSmith, Password: 012
+
+**Status:**
+Pass
 
 -----------------------
 
@@ -76,6 +82,9 @@ Test the login when credentials fields are blank.
 **Expected Result:**
 User should not be able to login if the credentials fields are not completed.
 
+**Status:**
+Pass
+
 ----------------------
 
 **Title:**
@@ -91,10 +100,13 @@ Test the login by using correct credentials and "Remember me" checkbox ticked of
 4. Press login button
 
 **Expected Result:**
-User should be able to login and stay logged in.
+If remember me checkbox is checked while login, browser should remember user credentials. Website homepage should load directly for next time.
 
 **Test Data:**
 User: JohnSmith, Password: 123
+
+**Status:**
+Pass
 
 ---------------------
 
@@ -110,7 +122,10 @@ Verify if when the user clicks the search box, the result should be displayed on
 3. Press enter
 
 **Expected Result:**
-User should be able to see the search results.
+When the user enters a valid search term, relevant results are expected to be displayed. Searching for "laptop" should show a list of products containing that word, for example 'gaming laptop'.
+
+**Status:**
+Pass
 
 ----------------------
 
@@ -126,7 +141,10 @@ Verify if when user enters letters in the search box, then suggested product lis
 3. Choose a search suggestion
 
 **Expected Result:**
-User should be able to see the search suggestions.
+User should be able to see search suggestions, which autocomplete what is written, for example 'laptop', 'lapte', 'laptop gaming' etc.
+
+**Status:**
+Pass
 
 ------------------------
 
@@ -142,5 +160,10 @@ Test search functionality when you type something that doesn't exist.
 3. Press enter
 
 **Expected Result:**
-A search must not give an error when the user is looking for something that doesn’t exist.
+Searching for ‘@@#’ or a string of random characters should result in a message like ‘No results found’ or ‘Invalid search term’.
+
+**Status:**
+Pass
+
+----------------------------------------
 
