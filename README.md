@@ -98,6 +98,7 @@ Test the login by using correct credentials and "Remember me" checkbox ticked of
 2. Add a correct user and password
 3. Ticked off „Remember me” checkbox
 4. Press login button
+5. Check if website homepage load directly for next time
 
 **Expected Result:**
 If remember me checkbox is checked while login, browser should remember user credentials. Website homepage should load directly for next time.
@@ -114,7 +115,7 @@ Pass
 Test search functionality for emag.ro
 
 **Description:**
-Verify if when the user clicks the search box, the result should be displayed on the page.
+Verify that when user clicks on search box, search result should be displayed on page.
 
 **Steps to reproduce:**
 1. Go to the search box
@@ -133,7 +134,7 @@ Pass
 Test search functionality for emag.ro
 
 **Description:**
-Verify if when user enters letters in the search box, then suggested product list should be displayed.
+Verity that when users enters letters in the search box, then suggested product list should be displayed.
 
 **Steps to reproduce:**
 1. Go to the search box
@@ -152,7 +153,7 @@ Pass
 Test search functionality for emag.ro
 
 **Description:**
-Test search functionality when you type something that doesn't exist.
+Entering an invalid search term and verifying that the search function handles it properly.
 
 **Steps to reproduce:**
 1. Go to the search box
